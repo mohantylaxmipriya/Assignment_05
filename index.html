@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile - Laxmipriya Mohanty</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <h1 class="main-title">Student Profile</h1>
+        <h2 class="student-name">Laxmipriya Mohanty</h2>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+        <!-- About Me Section -->
+        <section class="about-section">
+            <h3 class="section-title">About Me</h3>
+            <p class="about-text">
+                Hi! I'm <strong>Laxmipriya</strong>, a <strong>Semister Grade</strong> student with a passion for Web
+                Devlopment
+                My hobbies include coding, playing ludo, drawing, and singing.
+                I love building websites ,and explore new things.
+            </p>
+        </section>
+
+        <!-- Profile Image Section -->
+        <section class="image-section">
+            <img src="./assets/image.jpeg" alt="Profile picture of Laxmipriya Mohanty" class="profile-img">
+        </section>
+
+        <!-- Subjects Section -->
+        <section class="subjects-section">
+            <h3 class="section-title">Subjects</h3>
+            <ul class="subjects-list">
+                <li>Environmental Study</li>
+                <li>Data Structure</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>Communication English</li>
+                <li>DBMS</li>
+            </ul>
+        </section>
+
+        <!-- Goals Section -->
+        <section class="goals-section">
+            <h3 class="section-title">Academic Goals</h3>
+            <ol class="goals-list">
+                <li>Achieve 75%+ in board exams</li>
+                <li>Best in one Programming language</li>
+                <li>Learn advanced JavaScript frameworks</li>
+            </ol>
+        </section>
+
+        <!-- Marks Table Section -->
+        <section class="marks-section">
+            <h3 class="section-title">Recent Marks</h3>
+            <table class="marks-table">
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Marks (out of 100)</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Python</td>
+                        <td>98</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                        <td>95</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Mathmatical Physics</td>
+                        <td>97</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>Communication English</td>
+                        <td>92</td>
+                        <td>A</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="average-marks" id="averageMarks">Average: Calculating...</div>
+        </section>
+
+        <!-- Favorite Website Section -->
+        <section class="favorite-section">
+            <h3 class="section-title">Favorite Website</h3>
+            <p class="favorite-text">
+                Calculator
+                <a href="https://www.freecodecamp.org" target="_blank" class="favorite-link">
+                    freeCodeCamp
+                </a>
+            </p>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-section">
+            <h3 class="section-title">Get In Touch</h3>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="class">Branch:</label>
+                    <input type="text" id="class" name="class" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Dark Mode Toggle (Bonus) -->
+    <button class="theme-toggle" id="themeToggle">
+        🌙 Dark Mode
+    </button>
+
+    <!-- Greeting Message -->
+    <div class="greeting" id="greeting"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
